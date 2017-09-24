@@ -1,0 +1,22 @@
+.facets-ov-demo {
+  border: 0.5px solid #eaeaea;
+  height: 750px;
+  position: relative;
+  overflow:auto;
+  box-shadow: 2px 2px 3px #eaeaea;
+  margin-top:20px;
+}
+
+.facets-dive-demo {
+  border: 0.5px solid #eaeaea;
+  height: 750px;
+  position: relative;
+  overflow:auto;
+  box-shadow: 2px 2px 3px #eaeaea;
+  margin-top:20px;
+}
+
+.load-desc{
+  margin-top: 10px;
+  padding: 10px;
+}

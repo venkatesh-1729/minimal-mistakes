@@ -7,12 +7,12 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$archive-right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$archive-right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -20,6 +20,8 @@
     color: inherit;
     text-decoration: none;
   }
+
+  line-height: 1.5;
 }
 
 .archive__subtitle {

@@ -37,7 +37,7 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$archive-right-sidebar-width} - 1em);
   }
 
   h2, h3, h4, h5, h6 {
@@ -63,15 +63,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
+    width: $archive-right-sidebar-width-narrow;
+    margin-right: -1 * $archive-right-sidebar-width-narrow;
     padding-left: 1em;
     z-index: 10;
   }
 
   @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
+    width: $archive-right-sidebar-width;
+    margin-right: -1 * $archive-right-sidebar-width;
   }
 }
 

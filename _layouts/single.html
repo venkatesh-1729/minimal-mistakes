@@ -38,6 +38,33 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+
+      {% if page.facets %}
+      <div class='facets'>
+        <h1>Facets Dive</h1>
+        <div class="facets-dive-demo"></div>
+        <div class='load-desc'>
+          <div id="uploadbutton2"><h4><a>load your own data</a></h4></div>
+          <div><h6>Load one or more csv files with your first row being the header.</h6></div>
+        </div>
+      </div>
+
+      <hr />
+      <hr />
+
+      <div class=''>
+        <h1>Facets Overview</h1>
+        <div class="facets-ov-demo"></div>
+        <div class='load-desc'>
+          <div id="uploadbutton1"><h4><a>load your own data</a></h4></div>
+          <div><h6>Load one or more csv files with your first row being the header.</h6></div>
+        </div>
+      </div>
+
+      <input type="file" id="fileupload1" style="visibility:hidden" multiple/>
+      <input type="file" id="fileupload2" style="visibility:hidden" multiple/>
+      {% endif %}
+
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
