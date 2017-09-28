@@ -4,20 +4,20 @@ Categories: Kafka-Streaming
 markdeep: true
 ---
 
-> Kafka first came into existence as distributed publish-subscribe messaging system at [Linkedin](https://engineering.linkedin.com/27/project-kafka-distributed-publish-subscribe-messaging-system-reaches-v06) which on later evolved into a [distributed streaming platform](https://kafka.apache.org/). Currently it is backbone for many real time stream processing infrastructures across [many](https://cwiki.apache.org/confluence/display/KAFKA/Powered+By) companies.
+> Kafka first came into existence as distributed publish-subscribe messaging system at [Linkedin](https://engineering.linkedin.com/27/project-kafka-distributed-publish-subscribe-messaging-system-reaches-v06) which on later evolved into a [distributed streaming platform](https://kafka.apache.org/). Currently, it is the backbone for many real-time stream processing infrastructures across [many](https://cwiki.apache.org/confluence/display/KAFKA/Powered+By) companies.
 
 Introduction
 ============
 Kafka as a distributed streaming platform has the following capabilities.
 
 1. Publish and subscribe to streams of records - Messaging System.
-2. Store streams of records in fault-tolerant way - Storage System.
-3. Lets you process streams of records as they occur - Real time stream Processing.
+2. Store streams of records in fault tolerant way - Storage System.
+3. Lets you process streams of records as they occur - Real-time stream Processing.
 
 It is used for building two broad classes of applications.
 
-1. Real time data pipelines to move data reliably between systems.
-2. Real time streaming applications that react to or transform streams of data.
+1. Real-time data pipelines to move data reliably between systems.
+2. Real-time streaming applications that react to or transform streams of data.
 
 
 <div class="markdeep-diagram">
@@ -57,7 +57,7 @@ Kafka Terminology
 * **Record** - Unit of data stored in Kafka.
   + A record consists of *Key*, *Value*, *Time Stamp*.
 * **Topic** - A category or feed name to which records are published.
-  + Core abstraction of stream of records in Kafka.
+  + Core abstraction of the stream of records in Kafka.
 * **Publisher** \| **Producer** - A Kafka client that publishes records to the Kafka cluster.
 * **Subscriber** \| **Consumer** - A Kafka client that consumes records from the Kafka cluster.
   + Consumers label them shelves with *consumer group name*.
@@ -66,10 +66,10 @@ Kafka Terminology
 * **Partitions** - Division of data present in a topic.
   + All the data of a topic may not fit in one machine.
   + They allow data to be consumed in parallel by consumers in a consumer group.
-* **Partitioned Logs** - Immutable sequence of records in each partition of a topic.
+* **Partitioned Logs** - an Immutable sequence of records in each partition of a topic.
 * **Offset** - Unique sequential index of data in partition.
   + Local to partition i.e no global ordering among records in a topic.
-  + Oldest will be at head (offset 0) and newest record will be at tail.
+  + Oldest will be at the head (offset 0) and the newest record will be at the tail.
 
 <div class="markdeep-diagram">
 ******************************************************************************************
@@ -113,23 +113,23 @@ Kafka Features And Promises
   + Consumer are grouped into consumers groups for fault tolerance and scalability.
   + Each record in a topic will be delivered to one consumer in a consumer group.
   + Only meta data retained (in ZooKeeper) for a consumer is its offset.
-  + Offset is controlled by consumer - can consume records in any order.
+  + Offset is controlled by the consumer - can consume records in any order.
   + These features makes consumer very cheap.
   + They can come and go without affecting Kafka cluster.
 * Producer
-  + Producer is can choosing partition for a record.
-  + For example round robin for load balancing and hash partitioning based on key.
+  + Producer is can choose partition for a record.
+  + For example round robin for load balancing and hash partitioning based on the key.
 * Partitions
   + They are distributed across brokers.
   + They are replicated for fault tolerance.
   + Each partition has a leader.
-  + All the read and writes are handled by leader.
-  + Each broker will act as leader for some of its partitions for load balancing.
+  + All the read and writes are handled by the leader.
+  + Each broker will act as a leader for some of its partitions for load balancing.
 
 * Total Order is guaranteed withing a partition.
-* Messages sent by producer to a partition will be appended in the order they are sent.
-* Consumer sees the the records in the order they are stored in log.
-* A topic with replication factor N, will tolerate N-1 server failures.
+* Messages sent by the producer to a partition will be appended in the order they are sent.
+* Consumer sees the-the records in the order they are stored in the log.
+* A topic with replication factor N will tolerate N-1 server failures.
 
 Kafka Configuration
 ===================

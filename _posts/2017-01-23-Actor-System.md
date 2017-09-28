@@ -1,11 +1,12 @@
 ---
-categories: Actor-System
+title: "Actor System"
+Categories: Actor-System
 ---
 
 > Actor model in computer science is a mathematical model of concurrent computation that treats "actors" as the universal primitives of concurrent computation. -- Wikipedia
 
 # Actor Model
-You can find libraries and frameworks implementing this model in many language [here](https://en.wikipedia.org/wiki/Actor_model#Actor_libraries_and_frameworks).
+You can find libraries and frameworks implementing this model in many languages [here](https://en.wikipedia.org/wiki/Actor_model#Actor_libraries_and_frameworks).
 
 Some of the other concurrency models are : 
 * CSP (communicating sequential processes).
@@ -19,22 +20,22 @@ Some of the other concurrency models are :
 * Encapsulate internal state.
 * Actors are asynchronous.
 
-## What can actors do ?
+## What can actors do?
 * Create new actors.
 * Receive messages and in response to that:
     + Make local decisions (alter local state).
-    + Perform arbitrary, side effecting action.
+    + Perform arbitrary, side-effecting action.
     + Send messages.
     + Responds to the sender 0 or more times.
     + Processes exactly one message a time.
 
-> Don't communicate by sharing memory; instead share memory by communicating. -- Effective Go
+> Don't communicate by sharing memory; instead, share memory by communicating. -- Effective Go
 
 ## Properties of Communication
 * No channels or intermediaries (like in CSP).
-* Best effort delivary.
-* At most one delivary.
-* Messages can take arbitrary long to be delivered.
+* Best effort delivery.
+* At most one delivery.
+* Messages can take arbitrarily long to be delivered.
 * No message ordering guarantees.
 
 ## Address
@@ -51,12 +52,12 @@ Some of the other concurrency models are :
 * The running state of an actor is monitored and managed by another actor (supervisor).
 
 #### Properties of Supervision
-* Constantly monitors running state of actor.
-* Can perform actions based on state of actor.
+* Constantly monitors running state of the actor.
+* Can perform actions based on the state of the actor.
 * Supervision Trees.
 
 ## Transparent Lifecycle Management
-* Address don't change during restarts.
+* Address doesn't change during restarts.
 * Mailboxes are persisted outside of actors.
 
 ## Actor Usecases
@@ -67,7 +68,7 @@ Some of the other concurrency models are :
 * Application with shared state.
 
 ## Actor Anti-Usecases 
-* Non concurrent systems.
+* Nonconcurrent systems.
 * Performance critical applications.
 * There is no mutable state.
 
@@ -75,3 +76,4 @@ Some of the other concurrency models are :
 * Too many actors.
 * Testing.
 * Debugging.
+
