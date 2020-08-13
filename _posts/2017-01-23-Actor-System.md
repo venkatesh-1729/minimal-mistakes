@@ -1,6 +1,6 @@
 ---
 title: "Actor System"
-Categories: Actor-System
+tags: Actor-System
 ---
 
 > Actor model in computer science is a mathematical model of concurrent computation that treats "actors" as the universal primitives of concurrent computation. -- Wikipedia

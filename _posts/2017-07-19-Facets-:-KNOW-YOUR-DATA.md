@@ -1,5 +1,6 @@
 ---
-categories: Visualization
+layout: know_your_data
+tags: Visualization
 facets: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Distributed Stream Processing With Apache Kafka"
-Categories: Kafka-Streaming 
+tags: Kafka-Streaming 
 markdeep: true
 ---
 

@@ -1,4 +1,4 @@
-function setupVis() {
+ifunction setupVis() {
     var fileupload1 = $("#fileupload1")[0];
     var fileupload2 = $("#fileupload2")[0];
     var data_from;
