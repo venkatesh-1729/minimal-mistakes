@@ -74,7 +74,7 @@ naver_site_verification  :
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "UA-174453154-1" # Replace this with your ID, or delete
+    tracking_id          : "UA-175307745-1" # Replace this with your ID, or delete
     anonymize_ip         : true
 
 
