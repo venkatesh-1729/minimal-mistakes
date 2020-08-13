@@ -10,7 +10,7 @@ title_separator          : "-"
 
 name                     : &name "Venkatesh Duppada" # &name is a YAML anchor which can be *referenced later
 description              : "Hello, World! I'm IIT Bombay CS graduate. I work as a software engineer at LinkedIn. Feel free to move around and know about me."
-url                      : "https://venkatesh-1729.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://venkatesh.page" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "venkatesh-1729/venkatesh-1729.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
