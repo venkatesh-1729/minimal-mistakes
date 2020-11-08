@@ -9,7 +9,7 @@ title_separator          : "-"
 # subtitle                 : ""
 
 name                     : &name "Venkatesh Duppada" # &name is a YAML anchor which can be *referenced later
-description              : "Hello, World! I'm IIT Bombay CS graduate. I work as a software engineer at LinkedIn. Feel free to move around and know about me."
+description              : "Hello, World! I'm IIT Bombay CS graduate. I work as a software engineer at Google. Feel free to move around and know about me."
 url                      : "https://venkatesh.page" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "venkatesh-1729/venkatesh-1729.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Venkatesh Duppada"
   avatar           : "/assets/images/VenkateshDuppada.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello, World! I'm IIT Bombay CS graduate. I work as a software engineer at LinkedIn. Feel free to move around and know about me."
+  bio              : "Hello, World! I'm IIT Bombay CS graduate. I work as a software engineer at Google. Feel free to move around and know about me."
   location         : "Bangalore, India"
   email            :
   links:
@@ -91,7 +91,7 @@ author:
       url: "mailto:venkateshduppada9@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://venkatesh.name"
+      url: "https://venkatesh.page"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/venkatesh-1729"
